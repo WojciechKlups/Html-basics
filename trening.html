@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>strona treningowa</title>
+    </head>
+<body>
+    <h1>Zadanie praktyczne</h1>
+    <h3>Fieldsety z polami:</h3>
+    <ul>
+        <li>Imię i nazwisko</li>
+        <li>Hasło</li>
+        <li>Hobby (type checkbox)</li>
+        <li>Kategoria wiekowa (typ radio)</li>
+    </ul>
+    <section>
+        <form action="mailto:wasz_adres_e-mail?subject=Ankieta" method="post" enctype="text/plain" accept-charset="utf-8">
+            <fieldset>
+                <legend>Jak masz na imię i nazwisko</legend>
+                Imię: <input type="text" name="imie" maxlength="20" required/><br /> Nazwisko: <input type="text" name="nazwisko" maxlength="20" required/><br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Podaj swoje hasło</legend>
+                Hasło: <input type="password" name="haslo" required/>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Jakie jest Twoje hobby?</legend>
+                <input type="checkbox" name="hobby" value="kursy_z_sda" id="kursy_z_sda" /> <label for="kursy_z_sda">Kursy z SDA</label>
+                <input type="checkbox" name="hobby" value="plywanie" id="plywanie" /> <label for="plywanie">Pływanie</label>
+                <input type="checkbox" name="hobby" value="fotografia" id="fotografia" /> <label for="fotografia">Fotografia </label>
+                <input type="checkbox" name="hobby" value="programowanie" id="programowanie" /> <label for="programowanie">Programowanie </label>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Do jakiej kategori wiekowej należysz?</legend>
+                <input type="radio" name="kategoria_wiekowa" value="1-18" id="wiek_1-18" /><label for="4">1-18</label>
+                <input type="radio" name="kategoria_wiekowa" value="18-40" id="wiek_18-40" /><label for="5">18-40</label>
+                <input type="radio" name="kategoria_wiekowa" value="40+" id="wiek_40+" /><label for="6">40+</label>
+            </fieldset>
+            <br />
+            <br />
+            <br />
+            <input type="submit" value="Wyślij" />
+            <br />
+        </form>
+    </section>
+</body>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>to jest tytuł strony</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="NAGLOWEK">Nagłówek szablonu</header>
+        <nav id="MENU">Menu nawigacyjne</nav>
+        <aside id="INFORMACJE">Dodatkowe informacje</aside>
+        <article id="TRESC">Treść strony</article>
+        <br/>
+        <div>
+            <table border="4">
+            <thead bgcolor = "yellow" class="fontcolor" id="tabelka">
+                <tr>
+                    <th>Imię</th><th>Nazwisko</th><th>Wiek</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan</td><td>Nowak</td><td bgcolor="green">50</td>
+                </tr>
+                <tr>
+                    <td bgcolor="red">Jan</td><td>Kowalski</td><td>94</td>
+                </tr>
+                <tr>
+                    <td>Jan Nowak</td><td>Jeziorański</td><td>100</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div>
+            <ul style="list-style-type:square">
+                <li>Ala</li>
+                <li>ma</li>
+                <li>
+                    <ol type="I">
+                        <li>psa</li>
+                        <li>rybkę</li>
+                        <li>syf</li>
+                    </ol>
+                </li>
+                <li>kota</li>
+            </ul>
+            <ol type="A">
+                <li>A kot</li>
+                <li>ma</li>
+                <li>Alę</li>
+            </ol>
+        </div>
+        <div>
+            <canvas id="szakalaka" width="400" height="400">
+    
+            </canvas>
+        </div>
+        <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/s9APLXM9Ei8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+            <img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAkFBMVEX/bEz/////YDv/aUf/aEb/XDX/YTz/497/ZUL/akr/nIr/jnj/1s//3tj/ZEH/WjH/0Mj/h2//lYH/dln/9/X/zMP/7er/eV3/UiT/f2X/oI//39n/mYb/xLr/saP/ycD/vrL/qpv/s6X/kXz/Tx7/cFH/hGv/8O3/ShT/fmL/VSr/d1v/q53/uKv/pZT/6ONSrPCNAAAEkElEQVR4nO3Y23biOBAFUFuWhISFjAEbSLgFQug4Af7/76ZKMoSwJt3zkDUZmLMf2pcCVnRaLstOEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA3/Naa/vTf8SN8Kt+3718mZYkiPJEHNM0zbMvqnJweDiMkVZLdH4XVqjO5L/6F/2H/SGsHlUH/8ewbEZ4h7e23VEhLCm10Ka93DKvRTyyKoQVCtbQR3x28TNx116UTmesFzcesJ3mef5CQ5Il7Ww5AD4RwlKzyvXXW8MfE+W+cq5avImsDNWnsswSMV73nVvlIhvTt/KYdfxF8caleS4opTc686qn896NX7vygQaeFkmiePtuqHvT9shzp3xMg5lP7PaYtqrnut07Kl21u51kypsNZyF2HKVankpDKZ9oux/E379lNuMRba19421f06qBtmsO6xRKOrZ6l57NO6ewfnXOJ0ehy809/eCYj5vexxe25sBhpbcfVuzlD1J2eTA7Ebv3OMZQP45ChAVPjXS5WIf89kuOzlXrRYjpMZx0PEN3KknMO0+/w0XpsTicclvceFhmzVNChwmVptZ6ymf0HMKaFapwnEE47CrjG45pOumFjlaE5ArVhCv5Jc7BGHbJIa+oNOOz0/CBdNntTm98cWanof3wHY46UG5eeSpNOJ2l4m7NM6RZzedzI40P58t4N/ShuTV0o2u4dS041idjJX+Bk9tNqFRw69qHWTtQd7DsD/3Ii1Fa0wTYC75kugWHwispO+SxK6+bZpgfYrtqwxI8F5d8Dy35enQb/keE+8OKT1ShxBdlj+dX3fz0QL9DuKWVFEpFrdk1yxDdaVHahiWH/dG5YbdhqX566TjhTxrN3x/OP5c4rL746YF+B8lDead5cdA02l/UkzvqKqyiPA27/jKs0YRDzxsKtZ5Un0shLP3TA/0ONuGhUJt/5XW7pYO1uQprwldqvdhsn91FWJzIatZtzQwnuuLPLxTPrPm5NHi4m7ASzqimaaI0jZHvjVN7FRY3/V3hZXzQacPS4Taq+HWNKIpCJwVNqiP3qKFffCqFpcOdhBUWDyO6+HitxQsHkVyFxU27z/dG89GzNv4lNClprVr0XG9hwuqDrtNHZTndlMK14olLdzSzwvKAriAfF99ppa/Dyvkfr4px/RHW6i3hR6Bd7sMyNC2z9uu0wo3f3+XGPIXSHYWVqHCn69IYw85MXoclQgid9vmnVC52++1FE1/SzU7FB0haTWWvF6Xqni7DuHig58O4+qZV/Meb0rbBr9txd/hKW4lZPGg250DCwiBOsbibn0tOm3sKK9v0nOvTQ7A5OOf4adjPnevxO3g75JLWD3W4H6qSDntbP+gf67ryJlnFp7+B4t+xW67Gd4bGtqWZSOSAzu9v/LHwTAohwn+8oR3PO5524nu7WDJiO0yESTI+tInU8bT1wg6H8vRSjz8sTq8AL0r8+/eS1T9i7d8/2NmvCr8tAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANyUvwAqyUULpFW3ewAAAABJRU5ErkJggg== alt="ten obrazek" width="512" height="310">
+        </div>
+        <div>
+             <video width="320" height="240" controls>
+                <source src="2.mp4" type="video/mp4">
+                        Przegladarka nie wspiera tego formatu video.
+            </video>
+        </div>
+        <div>
+            <audio controls>
+                <source src="3.mp3" type="audio/mp3">
+                    Format nie jest obsługiwany!
+            </audio>
+        </div>
+        <div>
+            <h1>Pierwszy nagłówek</h1>
+            <h2>Drugi nagłówek</h2>
+            <h3>Trzeci nagłówek</h3>
+            <h4>Czwarty nagłówek</h4>
+            <h5>Piąty nagłówek</h5>
+            <h6>Szósty nagłówek</h6>
+            <p class="bold">tekst akapitu</p>
+        </div>
+        <br/>
+        <div>
+            <b>To jest pogrubiony tekst</b>
+            <br/>
+            <i>To jest tekst pochylony</i>
+            <br/>
+            <u>To jest podkreślony tekst</u>
+            <br/>
+            <s>To jest przekreślony tekst</s>
+            <br/>
+            <b><i><u><s>To jest pogrubiony, pochylony, podkreślony, przekreślony tekst</s></u></i></b>
+        </div>
+        <br/>
+        <article>
+                <pre>
+                    <code>
+                        #include <iostream>
+                
+                        using namespace std;
+                        
+                        int main()
+                        {
+                            cout "Tekst";
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </article>
+            <br/>
+            <article>
+                    <address>
+                        Jan Kowalski
+                        ul. Wiejska 1
+                        00-001 Warszawa
+                    </address>
+                </article>
+            <br/>
+            <a href="http://www.google.com" target="_blank">Link do Google</a>
+            <br/>
+            <img src="https://www.google.com//images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" width="242" height="64"/>
+            <a href="http://www.google.com" target="_blank"><img src="https://www.google.com//images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" width="242" height="64"/>
+            </a>
+            <br/>
+            <article>
+                    <form>
+                      <label for="imie">Imie</label>
+                      <input type="text" name="imie">
+                      <br>
+                      <label for="nazwisko">Nazwisko</label>
+                      <input type="text" name="nazwisko">
+                      <br>
+                      <label for="haslo">Hasło</label>
+                      <input type="password" name="haslo">
+                      <br>
+                      <input type="checkbox" id="aktywny" name="aktywny" checked>
+                      <label for="aktywny">Aktywny</label>
+                    <input type="button" value="Kliknij mnie!" onclick="alert('Kocham moją żonę')">
+                    </form>
+                </article>
+        <footer id="STOPKA">Stopka serwisu</footer>
+    </body>
+</html>
